@@ -1,4 +1,4 @@
-#Smooth for Arduino
+# Smooth for Arduino
 Functions for smoothing data, especially good for analogRead().
 ##Description
 Smooth has 7 simple function objects.
@@ -10,10 +10,10 @@ Smooth has 7 simple function objects.
 + "IsDECREASED" : returns whether incoming data(long) is less than previous data.
 
 
-##Installation
+## Installation
 [Download ZIP](https://github.com/ttatsf/Smooth/archive/master.zip) and [follow instructions here.](https://www.arduino.cc/en/Guide/Libraries)
 
-##Typical usage
+## Typical usage
 
 ```
 #include <Smooth.h>
@@ -98,5 +98,5 @@ void printData(int n, int raw, double smoothed, long rounded, long ceiled, long 
 
 
 
-#License
+# License
 This code is available under the [MIT License](http://opensource.org/licenses/mit-license.php).
