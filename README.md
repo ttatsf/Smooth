@@ -4,7 +4,7 @@ Functions for smoothing data, especially good for analogRead().
 Smooth has 7 simple function objects.
 
 + "Smooth" : returns exponential moving average(double) from incoming data(long).
-+ "SchmittRound", "SchmittCeil", "SchmittFloor" : almost same as round,ceil,or floor, but they ignore small change of data like the Shmitt triger. input:double, return:long.
++ "SchmittRound", "SchmittCeil", "SchmittFloor" : almost same as round,ceil,or floor, but they ignore small changes of data like the Shmitt triger. input:double, return:long.
 + "IsCHANGED" : returns whether incoming data(long) is changed from previous data.
 + "IsINCREASED" : returns whether incoming data(long) is larger than previous data.
 + "IsDECREASED" : returns whether incoming data(long) is less than previous data.
