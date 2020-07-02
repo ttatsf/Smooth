@@ -65,7 +65,7 @@ void loop(){
   //  regular pattern for array :
   for (int i = 0; i < 4; i++) {
     const int RAW = analogRead(PIN[i]);
-    const int SMOOTHED = smooth[i](RAW);
+    const double SMOOTHED = smooth[i](RAW);
     if (isCHANGED[i](long(SMOOTHED))) {
       //  Do anything you want only when the data changed.
         printData(PIN[i], RAW, SMOOTHED
@@ -75,7 +75,7 @@ void loop(){
         );
     }
   }
-  delay(10);
+  delay(2);
 }
 
 void printData(int n, int raw, double smoothed, long rounded, long ceiled, long floored){
