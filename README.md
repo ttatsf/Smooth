@@ -66,7 +66,7 @@ void loop(){
   for (int i = 0; i < 4; i++) {
     const int RAW = analogRead(PIN[i]);
     const int SMOOTHED = smooth[i](RAW);
-    if (isCHANGED[i](SMOOTHED)) {
+    if (isCHANGED[i](long(SMOOTHED))) {
       //  Do anything you want only when the data changed.
         printData(PIN[i], RAW, SMOOTHED
             , schmittRound[i](SMOOTHED)
